@@ -1,0 +1,127 @@
+/* Réinitialisation générale */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #292d32;
+    width: 100%;
+    min-height: 100vh; /* Assure que le fond couvre toute la hauteur */
+    font-family: Arial, sans-serif; /* Police par défaut */
+  }
+  
+  /* ---------------Navbar----------------- */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    background: #7b39eb;
+    padding: 0 1rem;
+  }
+  
+  .menuG, .menuD {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre les éléments */
+  }
+  
+  .menuD {
+    margin-left: auto;
+  }
+  
+  .menuD li a, .menuG li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #febc0c;
+    transition: color 0.3s ease;
+  }
+  
+  .menuD li a:hover, .menuG li a:hover {
+    color: #fff; /* Change la couleur au survol */
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img {
+    height: 8vh; /* Taille adaptée pour mobiles */
+    max-width: 20vh;
+    object-fit: contain; /* Assure que l'image reste proportionnée */
+  }
+  
+  /* ---------------Main Section----------------- */
+  .img-offre {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-offre {
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    font-size: smaller;
+    color: #febc0c;
+  }
+  
+  .meilleur-vente {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr; /* Une colonne sur mobile */
+    padding: 0.5rem;
+  }
+  
+  .vente-titre {
+    text-align: center;
+    color: #febc0c;
+    background-color: #7b39eb;
+    padding: 10px;
+  }
+  
+  .vente {
+    background-color: #7b39eb;
+    border-radius: 10px;
+    text-align: center;
+    color: #febc0c;
+  }
+  
+  .vente img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Coins arrondis en haut */
+    object-fit: cover;
+  }
+  
+  .voiture {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    padding: 0.5rem;
+  }
+  
+  .img-voiture {
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column; /* Les éléments sont empilés sur mobile */
+    background-color: #7b39eb;
+    padding: 1rem;
+    color: #febc0c;
+    text-align: center;
+  }
+  
+  .copy, .contact {
+    font-size: smaller;
+    margin-bottom: 0.5rem;
+  }
+  

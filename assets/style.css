@@ -1,0 +1,245 @@
+
+
+* {
+ 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
+
+
+
+}
+
+body {
+
+  background: #292d32;
+  /* max-width: 360px;
+  height: auto; */
+  min-width: 360px;
+  min-height: 100vh;
+}
+
+/* ---------------head----------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+  background: #7b39eb;
+  padding: 1rem;
+  width: 100%;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #000;
+}
+
+.menuG {
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menuD {
+
+  list-style: none;
+  display: flex;
+  
+}
+
+
+.menuD li a,
+.menuG li a {
+  text-decoration: None;
+  font-size: 30px;
+  color: #febc0c;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+
+  display: flex;
+ width: 25vh;
+  object-fit: contain;
+}
+
+/* ---------------main----------------- */
+
+.img-offre {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.img-offre img {
+  width: 100%;
+}
+
+.text-offre {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-45%, -50%);
+  font-size: smaller;
+  color: #febc0c;
+}
+
+.meilleur-vente {
+  display: flex;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  /* width: 75%; */
+  
+}
+  
+
+.vente-titre {
+
+  color: #febc0c;
+  background-color: #7b39eb;
+  text-align: center;
+  padding: 10px;
+}
+
+.vente {
+  
+  background-color: #7b39eb;
+  border: 1px solid #7b39eb;
+  padding: 1px;
+  border-radius: 10px;
+  text-align: center;
+  color: #febc0c;
+  padding: 0.1rem;
+}
+
+.vente p {
+  padding: 10px;
+}
+
+.vente img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* --------selction modele ------- */
+
+.voiture {
+  width: 100%;
+  display: flex;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0.5rem;
+  color: #292d32;
+  margin-top: 1rem;
+  background-color: #7b39eb;
+}
+
+.img-voiture:nth-child(1) {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  color: #febc0c;
+  background-color: #7b39eb;
+  border: none;
+  padding: 1rem;
+}
+
+.img-voiture {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+  color: #7b39eb;
+
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #7b39eb;
+  margin-top: 5%;
+}
+
+.copy {
+  display: flex;
+  padding: 1rem;
+  font-size: smaller;
+}
+
+.contact {
+  display: flex;
+  padding: 1rem;
+  text-align: right;
+  font-size: smaller;
+}
+
+
+
+@media (min-width: 768px) {
+  *{
+    font-size: 25px;
+  }
+
+  .logo img {
+
+    display: flex;
+    
+   
+    object-fit: contain;
+  }
+ 
+
+  .menuD, .menuG {
+    gap: 2REM; 
+  }
+
+  .logo img {
+    height: 10vh;
+    max-width: 25vh;
+  }
+  .vente p {
+    padding: 40px;
+   
+  }
+
+
+  .img-voiture:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #febc0c;
+    background-color: #7b39eb;
+    border: none;
+    padding: 1rem;
+  }
+  .meilleur-vente {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+  }
+
+  .voiture {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+  }
+
+  footer {
+    flex-direction: row; /* Footer en ligne */
+    justify-content: space-between;
+  }
+
+  .copy, .contact {
+    flex: 1; /* Distribution égale de l'espace */
+    text-align: left;
+  }
+}
