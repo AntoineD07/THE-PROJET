@@ -1,3 +1,4 @@
+// ---------------------------acceuil-------------------------------//
 const navSlide = ()=>{
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -24,3 +25,26 @@ const navSlide = ()=>{
     
 }
 navSlide()
+
+// ---------------------------panier-------------------------------//
+const menuSlide = () => {
+    const panier = document.querySelector('.panier')
+    const menu = document.querySelector('.menu-panier')
+    const panierMenu = document.querySelectorAll('.menu-panier li')
+    panier.addEventListener('click', () => {
+        menu.classList.toggle('menu-active')
+        console.log('menu-active');
+        
+
+        panierMenu.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ''
+            } else {
+                link.style.animation = `menuFade 0.5s ease forwards ${index / 7 + 0.5}s`
+
+            }
+        })
+        panier.classList.toggle('toggle')
+    })
+}
+menuSlide()

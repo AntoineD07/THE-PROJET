@@ -1,4 +1,9 @@
+@font-face {
+  font-family:Copperplate-Gothic ;
+  src: url('./font/Copperplate-Gothic-Std-30-BC.ttf');
+}
 * {
+  font-family:Copperplate-Gothic;
 
   padding: 0;
   margin: 0;
@@ -10,7 +15,7 @@
 }
 
 body {
-
+  overflow-x: hidden;
   background: #292d32;
   /* max-width: 360px;
   height: auto; */
@@ -37,48 +42,31 @@ nav div {
   display: flex;
   height: 8vh;
 }
-
-.panier li {
-margin: 3vh;
-  list-style: none;
-}
-
-.panier li a {
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-}
-
+/* ------------------menu acceuil----------------------- */
 .nav-links li {
   list-style: none;
+  opacity: 0;
 }
 
 .nav-links a {
-
   color: aliceblue;
   text-decoration: none;
 }
 
 .burger div {
-
   width: 25px;
   height: 2px;
   margin: 5px;
   background-color: #febc0c;
   transition: all 0.3s ease;
-
 }
 .nav-links {
+  justify-content: space-around;
   position: absolute;
   border-right: 1px solid #7b39eb;
   border-bottom: 1px solid #7b39eb;
   border-bottom-right-radius: 10px;
-  left: 30%;
+  left: 40%;
   height: 50vh;
   top: 14vh;
   background: #292d32;
@@ -86,15 +74,10 @@ margin: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 40%;
   transform: translateX(-200%);
   transition: transform 0.5s ease-in;
-
-
-}
-
-.nav-links li {
-  opacity: 0;
+  
 }
 
 .burger {
@@ -105,7 +88,6 @@ margin: 3vh;
 .nav-active {
   transform: translateX(-100%);
 }
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -132,8 +114,63 @@ margin: 3vh;
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* --------------------menu panier----------------------- */
+.menu-panier li {
+  opacity: 0;
+  list-style: none;
+  margin: 2rem;
 
-/* ---------------main----------------- */
+}
+
+.menu-panier a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.menu-panier {
+  border-left: 1px solid #7b39eb;
+  border-bottom: 1px solid #7b39eb;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 50vh;
+  top: 14vh;
+  background: #292d32;
+  opacity: 0.9;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+ 
+}
+.panier p {
+  font-size: 25px;
+}
+.panier{
+ 
+  margin: 10px;
+  display: block;
+  cursor: pointer;
+}
+/* anime */
+.menu-active{
+  transform: translateX(0%);
+}
+@keyframes menuFade {
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+  
+}
+
+/* ---------------main offre----------------- */
 
 .img-offre {
   display: flex;
@@ -156,13 +193,15 @@ margin: 3vh;
   color: #febc0c;
 } */
 
+/* ----------------------main meilleur vente-------------- */
 .meilleur-vente {
   display: flex;
   display: grid;
+ margin: 0 auto;
   grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
-  /* width: 75%; */
+  width: 75%;
 
 }
 
@@ -177,7 +216,8 @@ margin: 3vh;
 }
 
 .vente {
-
+  width: 100%;
+ 
   background-color: #7b39eb;
   border: 1px solid #7b39eb;
   padding: 1px;
@@ -188,6 +228,7 @@ margin: 3vh;
 }
 
 .vente p {
+  
   padding: 10px;
 }
 
@@ -197,7 +238,7 @@ margin: 3vh;
   border-top-right-radius: 10px;
 }
 
-/* --------selction modele ------- */
+/* ----------------------selction modele ------------------------- */
 
 .voiture {
   width: 100%;
@@ -229,16 +270,19 @@ margin: 3vh;
   color: #7b39eb;
 
 }
-
+/* -------------------------footer--------------------------- */
 footer {
   display: flex;
   justify-content: space-between;
 
   background-color: #7b39eb;
   margin-top: 5%;
+  color: #febc0c;
+  
 }
 
 .copy {
+  margin: auto;
   display: flex;
   padding: 1rem;
   font-size: smaller;
