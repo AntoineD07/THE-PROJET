@@ -56,7 +56,7 @@ nav div {
 
 .burger div {
   width: 25px;
-  height: 2px;
+  height: 3px;
   margin: 5px;
   background-color: #febc0c;
   transition: all 0.3s ease;
@@ -136,7 +136,7 @@ nav div {
   border-bottom: 1px solid #7b39eb;
   border-bottom-left-radius: 10px;
   display: flex;
-  position: absolute;
+   position: absolute; 
   right: 0px;
   height: 50vh;
   top: 14vh;
@@ -240,7 +240,7 @@ nav div {
 }
 
 .vente p {
-  
+  font-size: medium;
   padding: 10px;
 }
 
@@ -254,7 +254,7 @@ nav div {
 
 .voiture {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(1, 1fr);
@@ -280,8 +280,11 @@ nav div {
   border-radius: 5px;
   text-align: center;
   color: #7b39eb;
-
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }
+
 /* -------------------------footer--------------------------- */
 footer {
   display: flex;
