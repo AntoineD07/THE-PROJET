@@ -1,34 +1,33 @@
-@font-face {
+ @font-face {
   font-family:Copperplate-Gothic ;
-  src: url('./font/Copperplate-Gothic-Std-30-BC.ttf');
-}
-* {
-  font-family:Copperplate-Gothic;
+  src: url('/assets/font/Copperplate-Gothic-Std-30-BC.ttf');
+} 
+*{
+  font-family: Copperplate-Gothic;
 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* width: 100%; */
-  overflow-x: hidden;
+
 
 
 }
 
 body {
-  
-  background: #292d32;
-  /* max-width: 360px;
-  height: auto; */
-min-width: 360px;
-  /* min-height: 100vh; */
-  /* min-height: 400PX; */
+  overflow-x: hidden;
+  min-width:360px;
+  /* width: 100%; */
+  /* min-height: auto; */
+  /* display: flex;
+  flex-direction: column; */
 }
+
 
 /* ---------------head nav----------------- */
 nav {
   display: flex;
   justify-content:space-between ;
-
+width: 100%;
   align-items: center;
   min-height: 10vh;
   background-color: #7b39eb;
@@ -41,7 +40,7 @@ nav div {
 
 .logo img {
   display: flex;
-  height: 8vh;
+height: 8vh;
 }
 /* ------------------menu acceuil----------------------- */
 .nav-links li {
@@ -132,17 +131,17 @@ nav div {
 .menu-panier {
   
   z-index: 1;
+  position: absolute;
   border-left: 1px solid #7b39eb;
   border-bottom: 1px solid #7b39eb;
   border-bottom-left-radius: 10px;
   display: flex;
-  position: absolute;
-  right: 0px;
+  flex-direction: column;
+  right: 0%;
   height: 50vh;
   top: 14vh;
   background: #292d32;
   opacity: 0.9;
-  flex-direction: column;
   align-items: center;
   width: 40%;
   transform: translateX(100%);
@@ -174,121 +173,14 @@ nav div {
   
 }
 
-/* ---------------main offre----------------- */
 
-
-.img-offre img {
-  border: 1px solid #292d32;
-  width: 100%;
-  height: auto;
-  display: flex;
-}
-
-.text-offre  {
-  display: flex;
-  
-  font-size: small;
-  color: #7b39eb;
-  background: #febc0c;
-  opacity: 0.9;
-}
-.text-offre p{
-  animation: scrollText 10s linear infinite;
-}
-@keyframes scrollText {
-  0% {
-    transform: translateX(220%); /* Commence hors écran à droite */
-  }
-  100% {
-    transform: translateX(-100%); /* Finit complètement à gauche */
-  }
-}
-/* ----------------------main meilleur vente-------------- */
-.meilleur-vente {
-  display: flex;
-  display: grid;
- margin: 0 auto;
-  grid-gap: 15px;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
-  width: 75%;
-
-
-}
-
-
-.vente-titre {
-  border-top: 2px solid #292d32;
-  color: #febc0c;
-  background-color: #7b39eb;
-  text-align: center;
-  padding: 15px;
-
-}
-
-.vente {
-  width: 90%;
-  height: auto;
- 
-  background-color: #7b39eb;
-  border: 1px solid #7b39eb;
-  padding: 1px;
-  border-radius: 10px;
-  text-align: center;
-  color: #febc0c;
-  padding: 0.1rem;
-}
-
-.vente p {
-  
-  padding: 10px;
-}
-
-.vente img {
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-/* ----------------------selction modele ------------------------- */
-
-.voiture {
-  width: 100%;
-  display: flex;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0.5rem;
-  color: #292d32;
-  margin-top: 1rem;
-  background-color: #7b39eb;
-}
-
-.img-voiture:nth-child(1) {
-  /* grid-column-start: 1;
-  grid-column-end: 3; */
-  color: #febc0c;
-  background-color: #7b39eb;
-  border: none;
-  padding: 1rem;
-}
-
-.img-voiture {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  padding: 1px;
-  border-radius: 5px;
-  text-align: center;
-  color: #7b39eb;
-
-}
-/* -------------------------footer--------------------------- */
 footer {
+  /* position: absolute;bottom: 0;  */
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-
+  
+  justify-content: center;
   background-color: #7b39eb;
-  margin-top: 5%;
   color: #febc0c;
   
 }
@@ -306,12 +198,9 @@ footer {
   text-align: right;
   font-size: smaller;
 }
-
-
 @media screen and (min-width: 768px) {
   body{
     font-size: larger;
-    overflow-x: hidden;
   }
 
   nav {
@@ -363,20 +252,7 @@ footer {
       font-size: 40px;
       margin-right: 2rem;
     }
-
-    /* -----------------main---------------------------------- */
-    .img-offre{
-     background-color: #f1f1f1;
-    }
-    .img-offre img {
-      border: 1px solid #292d32;
-      width: 80%;
-      display: flex;
-      margin: auto;
-    }
-    .text-offre  {
-      font-size: medium;
-    }
+   
     @keyframes scrollText {
       0% {
         transform: translateX(350%); /* Commence hors écran à droite */
@@ -384,31 +260,4 @@ footer {
       100% {
         transform: translateX(-200%); /* Finit complètement à gauche */
       }
-    }
-
-    .meilleur-vente {
-     
-      grid-gap: 10px;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 1rem;
-      width: 90%;
-    
-    
-    }
-    .img-voiture:nth-child(1) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
-    .voiture {
-      width: 100%;
-      display: flex;
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0.5rem;
-      color: #292d32;
-      margin-top: 1rem;
-      background-color: #7b39eb;
-    }
-}
+    }}
