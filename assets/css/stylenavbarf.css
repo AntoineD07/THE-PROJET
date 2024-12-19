@@ -205,7 +205,7 @@ footer {
     justify-content:space-between ;
   
     align-items: center;
-    min-height: 20vh;
+    height: 20vh;
     background-color: #7b39eb;
   
   }
@@ -227,7 +227,7 @@ footer {
     
   }
   .nav-links {
-    top: 26vh;
+    top: 20vh;
     width: 30%;
     left: 30%;
     }
@@ -242,7 +242,7 @@ footer {
 
     /* --------------------menu panier----------------------- */
     .menu-panier {
-      top: 26vh;
+      top: 20vh;
       width: 30%;
     }
     .panier p {

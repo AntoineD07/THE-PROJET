@@ -1,7 +1,33 @@
-body{
-    
+body{     
     overflow-x: hidden;
 }
 main{
-    height: 100vh;
+    height: 100vh; 
+
+}
+h3{
+    text-align: center;
+    margin: 10%;
+}
+.pieces img{
+    height: 100px;
+    border: #7b39eb 2px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pieces{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    margin: auto;
+   
+
+   grid-gap: 15px;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+ background-color: #7b39eb;    border-radius: 10px;
 }
