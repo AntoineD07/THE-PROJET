@@ -17,11 +17,9 @@
 body {
   
   background: #292d32;
-  /* max-width: 360px;
-  height: auto; */
-min-width: 360px;
-  /* min-height: 100vh; */
-  /* min-height: 400PX; */
+  min-width: 360px;
+  text-shadow:1px 1px 1px #292d32;
+
 }
 
 /* ---------------head nav----------------- */
@@ -186,7 +184,7 @@ nav div {
 
 .text-offre  {
   display: flex;
-  
+  text-shadow: none;
   font-size: small;
   color: #7b39eb;
   background: #febc0c;
@@ -205,7 +203,7 @@ nav div {
 }
 /* ----------------------main meilleur vente-------------- */
 .meilleur-vente {
-  display: flex;
+  
   display: grid;
  margin: 0 auto;
   grid-gap: 15px;
@@ -227,9 +225,11 @@ nav div {
 }
 
 .vente {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 90%;
   height: auto;
- 
   background-color: #7b39eb;
   border: 1px solid #7b39eb;
   padding: 1px;
@@ -245,11 +245,31 @@ nav div {
 }
 
 .vente img {
+  object-fit: cover;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.vente button {
+background-color: #D9D9D9;
+text-align: center;
+padding: 3px;
+margin: 5px;
+border-radius:50px;
+box-shadow: #292d32 1PX 1PX;
+border: none;
+transition:transform 0.3s;
+}
 
+
+
+.vente button:hover {    
+    transform: scale(1.05);
+}
+.vente button a{
+  text-decoration: none;
+ 
+}
 /* ----------------------selction modele ------------------------- */
 
 .voiture {
@@ -328,12 +348,12 @@ footer {
   }
   
   nav div {
-    margin: 6vh;
+    margin: 3vh;
   }
   
   .logo img {
     display: flex;
-    height: 14vh;
+    height: 70px;
   }
 
    /*-------------menu accueil---------------------------  */
@@ -344,7 +364,7 @@ footer {
     
   }
   .nav-links {
-    top: 26vh;
+    top: 20vh;
     width: 30%;
     left: 30%;
     }
@@ -359,7 +379,7 @@ footer {
 
     /* --------------------menu panier----------------------- */
     .menu-panier {
-      top: 26vh;
+      top: 20vh;
       width: 30%;
     }
     .panier p {

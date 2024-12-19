@@ -16,10 +16,7 @@
 body {
   overflow-x: hidden;
   min-width:360px;
-  /* width: 100%; */
-  /* min-height: auto; */
-  /* display: flex;
-  flex-direction: column; */
+ text-shadow: #292d32 1px 1px 1px;
 }
 
 
@@ -55,7 +52,7 @@ height: 8vh;
 
 .burger div {
   width: 25px;
-  height: 2px;
+  height: 3px;
   margin: 5px;
   background-color: #febc0c;
   transition: all 0.3s ease;
