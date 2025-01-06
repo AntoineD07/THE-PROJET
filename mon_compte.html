@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style_connexion.css">
     <link rel="stylesheet" href="./assets/css/stylenavbarf.css">
-
+    <link rel="stylesheet" href="./assets/css/compte.css">
 </head>
 
 <body>
-
     <nav>
 
         <ul class="nav-links">
@@ -19,7 +17,7 @@
                 <a href="./index.html">acceuil</a>
             </li>
             <li>
-                <a href="">mon compte</a>
+                <a href="./mon_compte.html">mon compte</a>
             </li>
 
             <li>
@@ -51,25 +49,46 @@
 
     </nav>
 
-    <form>
-        <!-- <div class="contnaire-form"> -->
-            <h2>Se connecter</h2>
-            <div class="inputs">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mots de passe ">
+
+
+    <main>
+        <!-- -----------info perso------ -->
+        <h3>Mon compte</h3>
+        <div class="infos">
+            <h5>information personnelle</h5>
+            <div class="detail">
+                <p>nom</p>
+                <p>prenom</p>
+                <p>ville</p>
+                <p>adresse</p>
+                <p>numero</p>
+                <p>email</p>
+            </div>
+        </div>
+         <!-- -----------info perso------ -->
+
+         <!--------------historique achat----- -->
+
+        <div class="historique">
+            <h5>Historique</h5>
+        </div>
+        <div class="histo-achat">
+            <div class="histo-achats">
+                <img src="./assets/img/medium-_A3A6872.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur</p>
 
             </div>
-<div>
-            <p class="inscription">Je n'ai pas de compte. <br> me <a href="./index_inscription.html">crée un compte</a></p>
-</div>
-            <div class="button">
-
-                <button type="submit">connexion</button>
-
+            <div class="histo-achats">
+                <img src="./assets/img/medium-_A3A6872.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur</p>
 
             </div>
-        <!-- </div> -->
-    </form>
+
+        </div>
+         <!--------------historique achat----- -->
+    </main>
+
+
 
     <footer>
 
@@ -91,7 +110,6 @@
 
         </div>
     </footer>
-    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
