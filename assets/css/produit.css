@@ -23,7 +23,7 @@ h2{
     color: #febc0c;
     text-align: center;
 
-    margin:1.5rem auto ;
+    margin:2rem auto ;
     background-color: #7b39eb;
     padding: 0.5rem 2rem;
     border-radius: 25px;
@@ -31,7 +31,7 @@ h2{
 /* ----------grille des produit--- */
 .grille-produit{
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(1,1fr);
   
     grid-template-rows:repeat( 2, 1fr) ;
     gap: 2rem;
@@ -78,4 +78,19 @@ h2{
     background: #fff;
     color: #7b39eb;
     transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px){
+   
+    main{
+       
+    }
+    .grille-produit{
+       
+        grid-template-columns:repeat(3, 1FR);
+    }
+      
+    
+        
+
 }
