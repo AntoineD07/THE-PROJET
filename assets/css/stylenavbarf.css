@@ -12,9 +12,7 @@
 
 
 }
-a :hover{
-  transform: scale(1.1);
-}
+
 body {
   overflow-x: hidden;
   min-width:360px;
@@ -26,7 +24,7 @@ body {
 nav {
   display: flex;
   justify-content:space-between ;
-/* width: 100%; */
+
   align-items: center;
   min-height: 10vh;
   background-color: #7b39eb;

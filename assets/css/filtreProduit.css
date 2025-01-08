@@ -52,7 +52,11 @@ h3 {
     box-shadow: #292d32 0 6px 8px; 
     
 }
-
+.type:hover {    
+    transition: transform 0.3s;
+    transform: scale(1.02);
+    opacity: 1;
+}
 .type p {
     font-size: medium;
    
@@ -64,10 +68,7 @@ a{
     transition:transform 0.3s;
     opacity: 9;
 }
-a :hover {    
-    transform: scale(1.02);
-    opacity: none;
-}
+
 .type img {
     object-fit: cover;
     width: 100%;
