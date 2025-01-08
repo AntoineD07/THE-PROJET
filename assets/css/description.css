@@ -92,3 +92,72 @@ button{
     box-shadow: #292d32 2px 2px 5px;
   
 }
+
+@media screen and (min-width:768px ) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .titre {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        gap: 2rem;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .titre img {
+        width: 250px;  
+        height: auto;
+        box-shadow: 2px 2px 5px #7b39eb ;
+        border-radius: 15px;
+    }
+    
+    .titre .text {
+        order: -1;
+        text-align: left;
+       
+    }
+    .text{
+    
+   
+    }
+    
+    .titre h3 {
+        margin:10px;
+        color: #292d32;
+        font-size: 2.5rem;
+    }
+    
+    .prix{
+        margin: 10px;
+        color: #7b39eb;
+        font-size: 2rem;
+    }
+    .description {
+        order: 1;
+        width: 100%;
+        align-self: flex-start;
+      
+    }
+
+    .caracteristique {
+      
+        order: 2;
+        width: 100%;
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
+    .contaire-bouton {
+       order: 3;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
