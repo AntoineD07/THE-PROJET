@@ -93,10 +93,13 @@ h2{
    
     .grille-produit{
        
-        grid-template-columns:repeat(3, 1FR);
+        grid-template-columns:repeat(2, 1FR);
+
     }
-      
+    .produit img{
+        width: 100%;
+        max-width: 400PX;
     
-        
+    }    
 
 }

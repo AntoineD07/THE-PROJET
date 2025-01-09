@@ -122,11 +122,7 @@ button{
         text-align: left;
        
     }
-    .text{
-    
    
-    }
-    
     .titre h3 {
         margin:10px;
         color: #292d32;
@@ -153,7 +149,7 @@ button{
         margin-top: 1rem;
     }
     .contaire-bouton {
-       order: 3;
+        order: 3;
         display: flex;
         justify-content:center;
         align-items: center;
