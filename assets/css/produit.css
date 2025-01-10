@@ -46,7 +46,9 @@ h2{
     border-radius: 10px;
     padding: 0.5rem;
     text-align: center;
-    box-shadow: #292d32 0 6px 8px;}
+    box-shadow: #292d32 0 6px 8px;
+    max-width: 500PX;
+}
 .produit img{
     width: 100%;
     border-radius: 10px;
@@ -69,20 +71,40 @@ h2{
     background: #c2c2c2;
     color: #7b39eb;
     padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     font-size: 1rem;
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s
-    
-
+    transition: background 0.3s;
 
 }
 .produit a button{
     box-shadow: #292d32 2px 6px 6px;
+    
  }
 .description:hover{
+    background: #fff;
+    color: #7b39eb;
+    transform: scale(1.1);
+}
+.ajt-panier{
+    background: #c2c2c2;
+    color: #7b39eb;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.ajt-panier a button{
+    box-shadow: #292d32 2px 6px 6px;
+    
+ }
+ .ajt-panier:hover{
     background: #fff;
     color: #7b39eb;
     transform: scale(1.1);

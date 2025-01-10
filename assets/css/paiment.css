@@ -56,7 +56,10 @@ body{
   .payment--options button:last-child svg {
     height: 22px;
   }
-  
+  .payment--options :hover{
+    background-color: #7c239c42;
+
+  }
   .separator {
     width: calc(100% - 20px);
     display: grid;
