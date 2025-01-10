@@ -3,13 +3,23 @@ body{
     font-size: medium;
     overflow-x: hidden;
     min-width:360px;
+    --s: 30px;
+    /* control the size */
+
+    --c: #0000, #292d32 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+        var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+        var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+
 }
 
 form{
     display:flex ;
     flex-direction: column;
-    /* height: 80vh;    */
-
     width: 70%;
     margin:10% auto 10%;    
     background-color: #7b39eb;
@@ -25,6 +35,9 @@ form h2{
     justify-content: space-around;
     margin-bottom: 3rem;
 }
+label{
+    opacity: 0;
+}
  .inputs{
    
     display: flex;
@@ -32,10 +45,10 @@ form h2{
 
 }
 .inputs input{
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
     border: none;    
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     background-color:  #D9D9D9;
     outline: none;
 
@@ -49,7 +62,7 @@ form p{
     text-align: center;
 }
 .inscription{
-    color: #292D32;
+    color: #D9D9D9;
 }
 .inscription a{
     color: #febc0c;
@@ -74,13 +87,11 @@ form button:hover {
     transform: scale(1.05);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     *{
         font-size: 20px;
     }
-    body{
-        
-    }
+    
     form {
         width: 60%;
         margin:5% auto 10%;

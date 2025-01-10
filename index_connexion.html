@@ -36,10 +36,10 @@
 
         </div>
         <a href="./index.html">
-        <div class="logo">
-            <img src="./assets/img/logo/shop_tes_piéces_1_-removebg-preview(1).png" alt="logo">
-        </div>
-</a>
+            <div class="logo">
+                <img src="./assets/img/logo/shop_tes_piéces_1_-removebg-preview(1).png" alt="logo">
+            </div>
+        </a>
         <div class="panier">
             <p>&#128722</p>
         </div>
@@ -52,23 +52,28 @@
     </nav>
 
     <form>
-        <!-- <div class="contnaire-form"> -->
-            <h2>Se connecter</h2>
-            <div class="inputs">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mots de passe ">
+        <h2>Se connecter</h2>
+        <div class="inputs">
+            <label for="email">Email</label>
+         <input type="email" id="email" name="email" placeholder="Ex: exemple@domaine.com" 
+       pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+       title="Veuillez entrer une adresse email valide, comme exemple@domaine.com" required>
 
-            </div>
-<div>
-            <p class="inscription">Je n'ai pas de compte. <br> me <a href="./index_inscription.html">crée un compte</a></p>
-</div>
-            <div class="button">
-
-                <button type="submit">connexion</button>
-
-
-            </div>
-        <!-- </div> -->
+    
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required minlength="8"
+            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+            title="Doit contenir au moins une majuscule, une minuscule, un chiffre, un caractère spécial et 8 caractères au total." 
+            required>
+        </div>
+        <div>
+            <p class="inscription">Je n'ai pas de compte. <br>
+                Me <a href="./index_inscription.html">créer un compte</a>.
+            </p>
+        </div>
+        <div class="button">
+            <button type="submit">Connexion</button>
+        </div>
     </form>
 
     <footer>
